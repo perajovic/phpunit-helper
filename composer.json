@@ -1,0 +1,24 @@
+{
+    "name": "codecontrol/phpunit-helper",
+    "type": "library",
+    "description": "Simple PHPUnit helper classes",
+    "keywords": ["testing","phpunit"],
+    "homepage": "https://github.com/codecontrol/phpunit-helper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pera Jovic",
+            "email": "pera@codecontrol.rs",
+            "homepage": "http://www.codecontrol.rs/en/index",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "PHPUnitHelper": "src"
+        }
+    }
+}
