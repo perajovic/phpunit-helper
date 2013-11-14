@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPUnitHelper;
+namespace Codecontrol\PHPUnitHelper;
 
 class Utility
 {

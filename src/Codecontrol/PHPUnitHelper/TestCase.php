@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPUnitHelper;
+namespace Codecontrol\PHPUnitHelper;
 
 use \PHPUnit_Framework_TestCase as PHPUnit_Framework_TestCase;
 
