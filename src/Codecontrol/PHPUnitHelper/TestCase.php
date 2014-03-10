@@ -6,6 +6,21 @@ use \PHPUnit_Framework_TestCase as PHPUnit_Framework_TestCase;
 
 class TestCase extends PHPUnit_Framework_TestCase
 {
+    protected function tearDown()
+    {
+        $obj = new \ReflectionObject($this);
+        foreach ($obj->getProperties() as $property) {
+            if (!$property->isStatic() && 0
+                !== strpos($property->getDeclaringClass()->getName(), 'PHPUnit_')
+            ) {
+                $property->setAccessible(true);
+                $property->setValue($this, null);
+            }
+        }
+
+        parent::tearDown();
+    }
+
     /**
      * @param string $class
      * @param array  $methods
